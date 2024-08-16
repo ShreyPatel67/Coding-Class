@@ -1,0 +1,795 @@
+Shrey, [12-08-2024 03:17 PM]
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tutorial</title>
+    <link rel="stylesheet" href="page.css">
+</head>
+
+<body>
+    <header>
+        <nav class="top-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <nav class="top-nav">
+            <ul>
+                <li><a href="html.html">HTML</a></li>a
+                <li><a href="css.html">CSS</a></li>
+                <li><a href="js.html">JS</a></li>
+                <li><a href="python.html">Python</a></li>
+                <li><a href="node.html">Node JS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="side-navbar">
+        <ul>
+            <li><a href="#topic1">Node.js Home</a></li>
+            <li><a href="#topic2">Node.js Introduction</a></li>
+            <li><a href="#topic3">Node.js Installation</a></li>
+            <li><a href="#topic4">Node.js Modules</a></li>
+            <li><a href="#topic5">Node.js HTTP</a></li>
+            <li><a href="#topic6">Node.js File System</a></li>
+            <li><a href="#topic7">Node.js Events</a></li>
+            <li><a href="#topic8">Node.js NPM</a></li>
+        </ul>
+    </div>
+    <main>
+        <h2 class="main">Node.js Tutorial</h2>
+        <p class="intro">Node.js is a powerful JavaScript runtime built on Chrome's V8 engine.</p>
+        <p class="intro">With Node.js, you can create scalable network applications and handle multiple connections
+            efficiently.</p>
+        <p class="intro">Node.js is easy to learn and versatile - You will enjoy it!</p>
+
+
+        <section id="topic1">
+            <h2>Node.js Home</h2>
+            <p>Welcome to the Node.js home page! Node.js is a powerful JavaScript runtime built on Chrome's V8
+                JavaScript engine. It allows developers to run JavaScript code on the server side, providing the
+                capability to build fast and scalable network applications.</p>
+
+            <h3>Key Features of Node.js</h3>
+            <ul>
+                <li><strong>Asynchronous and Event-Driven:</strong> Node.js uses an event-driven, non-blocking I/O model
+                    that makes it efficient and suitable for real-time applications.</li>
+                <li><strong>Single Programming Language:</strong> With Node.js, you can use JavaScript for both
+                    client-side and server-side code, streamlining development.</li>
+                <li><strong>npm - Node Package Manager:</strong> Node.js comes with npm, the world's largest ecosystem
+                    of open source libraries and tools that you can use to enhance your projects.</li>
+                <li><strong>Scalability:</strong> Node.js is designed for scalability and can handle a large number of
+                    concurrent connections with minimal overhead.</li>
+                <li><strong>Community and Support:</strong> Node.js has a vibrant community and extensive documentation,
+                    which provides a wealth of resources and support for developers.</li>
+            </ul>
+
+            <h3>Getting Started with Node.js</h3>
+            <p>To get started with Node.js, you can visit the <a href="https://nodejs.org">official Node.js website</a>
+                where you'll find comprehensive resources, including installation guides, tutorials, and API
+                documentation. Whether you're new to Node.js or an experienced developer, the website offers valuable
+                information to help you make the most of this powerful platform.</p>
+        </section>
+
+        Shrey, [12-08-2024 03:17 PM]
+        <section id="topic2">
+            <h2>Node.js Introduction</h2>
+            <p>Node.js is a runtime environment that allows you to run JavaScript on the server side. Unlike traditional
+                web servers that handle HTTP requests in a synchronous manner, Node.js uses an event-driven,
+                non-blocking I/O model which makes it lightweight and efficient, especially for building scalable
+                network applications.</p>
+
+            <h3>History and Evolution</h3>
+            <p>Node.js was created by Ryan Dahl in 2009, with the aim of providing an efficient way to handle I/O
+                operations. It is built on the V8 JavaScript engine developed by Google, which compiles JavaScript code
+                directly to native machine code, allowing for high performance.</p>
+
+            <h3>Core Concepts</h3>
+            <ul>
+                <li><strong>Event-Driven Architecture:</strong> Node.js operates on an event-driven model, which means
+                    that operations like reading from a file or making a network request do not block the execution of
+                    other code. Instead, they use callbacks to signal when an operation has completed.</li>
+                <li><strong>Non-Blocking I/O:</strong> Traditional server models use synchronous I/O operations, which
+                    can block other operations. Node.js uses non-blocking I/O operations to allow multiple tasks to be
+                    performed simultaneously, increasing efficiency.</li>
+                <li><strong>Single-Threaded Event Loop:</strong> Node.js runs in a single-threaded environment but uses
+                    an event loop to handle multiple connections efficiently. This design helps to manage concurrency
+                    without the complexity of multi-threaded programming.</li>
+                <li><strong>npm (Node Package Manager):</strong> npm is a key feature of Node.js, providing a repository
+                    of packages and modules that you can easily integrate into your projects. It helps manage project
+                    dependencies and streamline development.</li>
+            </ul>
+
+            <h3>Use Cases</h3>
+            <p>Node.js is well-suited for a variety of applications, including:</p>
+            <ul>
+                <li><strong>Real-Time Applications:</strong> Chat applications, online gaming, and collaborative tools
+                    benefit from Node.js's ability to handle real-time data.</li>
+                <li><strong>API Development:</strong> Node.js is a popular choice for building RESTful APIs due to its
+                    asynchronous nature and ease of integrating with databases.</li>
+                <li><strong>Microservices:</strong> Its modular architecture makes Node.js a good fit for building
+                    microservices, which are small, independently deployable services that work together to create a
+                    larger application.</li>
+            </ul>
+
+            <h3>Getting Started</h3>
+            <p>To start with Node.js, you can follow the installation guide on the <a
+                    href="https://nodejs.org/en/">official Node.js website</a>. There, you'll find tutorials,
+                documentation, and resources to help you begin your journey with Node.js.</p>
+        </section>
+
+        Shrey, [12-08-2024 03:17 PM]
+        <section id="topic3">
+            <h2>Node.js Installation</h2>
+            <p>Installing Node.js is a straightforward process and involves downloading the appropriate installer for
+                your operating system. Node.js also includes npm (Node Package Manager), which helps manage project
+                dependencies.</p>
+
+            <h3>Installation Steps</h3>
+            <h4>For Windows</h4>
+            <ol>
+                <li>Visit the <a href="https://nodejs.org/en/download/">Node.js download page</a>.</li>
+                <li>Download the Windows Installer (.msi) for the LTS (Long Term Support) version or the Current
+                    version, depending on your preference.</li>
+                <li>Run the installer and follow the installation wizard. Make sure to check the box that says
+                    "Automatically install the necessary tools..." if prompted.</li>
+                <li>After installation, open a command prompt and verify the installation by running:
+                    <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>node -v</code>
+        <code>npm -v</code>
+                    </pre>
+                    You should see the version numbers for Node.js and npm.
+                </li>
+            </ol>
+
+            <h4>For macOS</h4>
+            <ol>
+                <li>Visit the <a href="https://nodejs.org/en/download/">Node.js download page</a>.</li>
+                <li>Download the macOS Installer (.pkg) for the LTS or Current version.</li>
+                <li>Open the downloaded .pkg file and follow the installation prompts.</li>
+                <li>Verify the installation by opening a terminal and running:
+                    <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>node -v</code>
+        <code>npm -v</code>
+                    </pre>
+                    You should see the version numbers for Node.js and npm.
+                </li>
+            </ol>
+
+            <h4>For Linux</h4>
+            <ol>
+                <li>Open a terminal window.</li>
+                <li>Update your package index:
+                    <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>sudo apt update</code>
+                    </pre>
+                </li>
+                <li>Install Node.js using a package manager. For Debian-based distributions (like Ubuntu), you can use:
+                    <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>sudo apt install nodejs npm</code>
+                    </pre>
+                </li>
+                <li>Alternatively, you can use Node Version Manager (nvm) to install and manage multiple versions of
+                    Node.js. Follow the instructions on the <a href="https://github.com/nvm-sh/nvm">nvm GitHub page</a>
+                    for installation.</li>
+                <li>Verify the installation by running:
+                    <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>node -v</code>
+        <code>npm -v</code>
+                    </pre>
+                    You should see the version numbers for Node.js and npm.
+                </li>
+            </ol>
+
+            <h3>Troubleshooting</h3>
+            <p>If you encounter issues during installation, consider checking:</p>
+            <ul>
+                <li>Ensure that your PATH environment variable includes the directory where Node.js is installed.</li>
+                <li>Consult the <a href="https://github.com/nodejs/node/issues">Node.js GitHub issues page</a> for
+                    common issues and solutions.</li>
+                <li>Check the <a href="https://nodejs.org/en/support/">Node.js support page</a> for additional resources
+                    and help.</li>
+            </ul>
+        </section>
+
+        Shrey, [12-08-2024 03:17 PM]
+        <section id="topic2">
+            <h2>Node.js Modules</h2>
+            <p>Modules in Node.js are a way to organize code into reusable pieces. Node.js uses the CommonJS module
+                system, which allows you to split your code into modules and import or export functionality as needed.
+                This modular approach helps in maintaining and managing code more effectively.</p>
+
+            <h3>Built-in Modules</h3>
+            <p>Node.js comes with several built-in modules that provide core functionality. You can use these modules
+                without any additional installation.</p>
+
+            <h4>Example of Using Built-in Modules</h4>
+            <p>Here's how you can use some of the built-in modules:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        // Importing the 'fs' module for file system operations
+        const fs = require('fs');
+        
+        // Reading a file asynchronously
+        fs.readFile('example.txt', 'utf8', (err, data) => {
+            if (err) throw err;
+            console.log(data);
+        });
+        </code>
+            </pre>
+
+            <h4>List of Common Built-in Modules</h4>
+            <ul>
+                <li><strong>fs:</strong> Provides file system-related functionality.</li>
+                <li><strong>http:</strong> Allows you to create HTTP servers and clients.</li>
+                <li><strong>path:</strong> Provides utilities for working with file and directory paths.</li>
+                <li><strong>os:</strong> Provides operating system-related utility methods and properties.</li>
+                <li><strong>events:</strong> Allows you to work with event-driven programming.</li>
+            </ul>
+
+            <h3>Creating Custom Modules</h3>
+            <p>You can also create your own modules to encapsulate functionality. Custom modules allow you to organize
+                your code and make it reusable across different parts of your application.</p>
+
+            <h4>Example of a Custom Module</h4>
+            <p>Here's how to create and use a custom module:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        // math.js - Define a custom module
+        exports.add = function(a, b) {
+            return a + b;
+        };
+        
+        exports.subtract = function(a, b) {
+            return a - b;
+        };
+        
+        // app.js - Import and use the custom module
+        const math = require('./math');
+        
+        console.log(math.add(5, 3));       // Outputs: 8
+        console.log(math.subtract(5, 3));  // Outputs: 2
+        </code>
+            </pre>
+
+            <h3>Exporting and Importing Modules</h3>
+            <p>Modules in Node.js use <code>module.exports</code> to export functionality and <code>require()</code> to
+                import it. You can export individual functions, objects, or entire modules.</p>
+
+            <h4>Exporting Functionality</h4>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        // Exporting a single function
+        module.exports = function(a, b) {
+            return a * b;
+        };
+        </code>
+            </pre>
+
+            <h4>Importing Functionality</h4>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        // Importing the module
+        const multiply = require('./multiply');
+        
+        console.log(multiply(4, 5)); // Outputs: 20
+        </code>
+            </pre>
+
+            <h3>Module Resolution</h3>
+            <p>When you use <code>require()</code>, Node.js follows a specific resolution algorithm to locate and load
+                the requested module:</p>
+            <ul>
+                <li>If the module name is a core module (like <code>fs</code>), it loads the core module.</li>
+
+                Shrey, [12-08-2024 03:17 PM]
+                <li>If the module is a file, Node.js looks for a file in the directory relative to the current module.
+                </li>
+                <li>If the module is a directory, Node.js looks for an <code>index.js</code> file inside the directory.
+                </li>
+                <li>If the module is not found, Node.js throws an error.</li>
+            </ul>
+        </section>
+
+
+
+        <section id="topic3">
+            <h2>Node.js HTTP</h2>
+            <p>Node.js provides a built-in module called <code>http</code> that allows you to create HTTP servers and
+                clients. This module is essential for handling HTTP requests and responses in your Node.js applications.
+            </p>
+
+            <h3>Creating an HTTP Server</h3>
+            <p>You can create a basic HTTP server using the <code>http</code> module. Here’s how to set up a simple
+                server that listens for requests and responds with a message:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        // Import the 'http' module
+        const http = require('http');
+        
+        // Create an HTTP server
+        const server = http.createServer((req, res) => {
+            // Set the response HTTP header with HTTP status and Content type
+            res.writeHead(200, {'Content-Type': 'text/plain'});
+            
+            // Send the response body
+            res.end('Hello World\n');
+        });
+        
+        // Listen on port 3000 and IP address 127.0.0.1
+        server.listen(3000, '127.0.0.1', () => {
+            console.log('Server running at http://127.0.0.1:3000/');
+        });
+        </code>
+            </pre>
+
+            <h3>Handling Requests</h3>
+            <p>The callback function in <code>http.createServer()</code> receives two arguments: <code>req</code>
+                (request) and <code>res</code> (response). You can use these to handle incoming requests and send
+                responses. Here’s an example of how to handle different HTTP methods and URLs:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        const http = require('http');
+        
+        const server = http.createServer((req, res) => {
+            // Set the response HTTP header
+            res.writeHead(200, {'Content-Type': 'text/html'});
+        
+            // Handle different request methods and URLs
+            if (req.method === 'GET' && req.url === '/') {
+                res.end('<h1>Home Page</h1>');
+            } else if (req.method === 'GET' && req.url === '/about') {
+                res.end('<h1>About Page</h1>');
+            } else {
+                res.writeHead(404, {'Content-Type': 'text/html'});
+                res.end('<h1>404 Not Found</h1>');
+            }
+        });
+        
+        server.listen(3000, '127.0.0.1', () => {
+            console.log('Server running at http://127.0.0.1:3000/');
+        });
+        </code>
+            </pre>
+
+            <h3>Handling POST Requests</h3>
+            <p>Handling POST requests involves receiving data sent by the client. Here's an example of how to handle a
+                POST request and process the data:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        const http = require('http');
+        
+        const server = http.createServer((req, res) => {
+            if (req.method === 'POST' && req.url === '/submit') {
+                let body = '';
+        
+                // Collect data chunks
+                req.on('data', chunk => {
+                    body += chunk.toString(); // Convert Buffer to string
+                });
+        
+                // When all data has been received
+                req.on('end', () => {
+                    console.log('Received POST data:', body);
+                    res.writeHead(200, {'Content-Type': 'text/plain'});
+                    res.end('Data received');
+                });
+            } else {
+                res.writeHead(404, {'Content-Type': 'text/html'});
+
+Shrey, [12-08-2024 03:17 PM]
+res.end('<h1>404 Not Found</h1>');
+            }
+        });
+        
+        server.listen(3000, '127.0.0.1', () => {
+            console.log('Server running at http://127.0.0.1:3000/');
+        });
+        </code>
+            </pre>
+
+            <h3>Creating an HTTP Client</h3>
+            <p>Node.js also allows you to make HTTP requests using the <code>http</code> module. Here's how to create an
+                HTTP client to make a GET request:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        const http = require('http');
+        
+        // Make a GET request
+        http.get('http://www.example.com', (resp) => {
+            let data = '';
+        
+            // Collect data chunks
+            resp.on('data', chunk => {
+                data += chunk;
+            });
+        
+            // When all data has been received
+            resp.on('end', () => {
+                console.log('Response:', data);
+            });
+        
+        }).on("error", (err) => {
+            console.log("Error: " + err.message);
+        });
+        </code>
+            </pre>
+
+            <h3>Additional Resources</h3>
+            <p>For more information on the <code>http</code> module, refer to the official Node.js documentation:</p>
+            <ul>
+                <li><a href="https://nodejs.org/api/http.html">Node.js HTTP Documentation</a></li>
+            </ul>
+        </section>
+
+
+        <section id="topic4">
+            <h2>Node.js File System</h2>
+            <p>The <code>fs</code> module in Node.js provides an API for interacting with the file system. It allows you
+                to perform operations such as reading, writing, and deleting files and directories. The module supports
+                both synchronous and asynchronous methods.</p>
+
+            <h3>Reading Files</h3>
+            <p>You can read files using either the asynchronous or synchronous methods provided by the <code>fs</code>
+                module. Here's how to read a file asynchronously:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        // Import the 'fs' module
+        const fs = require('fs');
+        
+        // Read a file asynchronously
+        fs.readFile('example.txt', 'utf8', (err, data) => {
+            if (err) throw err;
+            console.log('File content:', data);
+        });
+        </code>
+            </pre>
+
+            <p>To read a file synchronously, you can use:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        // Read a file synchronously
+        const data = fs.readFileSync('example.txt', 'utf8');
+        console.log('File content:', data);
+        </code>
+            </pre>
+
+            <h3>Writing Files</h3>
+            <p>Writing data to a file can also be done asynchronously or synchronously. Here’s how to write to a file
+                asynchronously:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        // Write data to a file asynchronously
+        fs.writeFile('output.txt', 'Hello, Node.js!', (err) => {
+            if (err) throw err;
+            console.log('Data written to file');
+        });
+        </code>
+            </pre>
+
+            <p>To write data synchronously, you can use:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        // Write data to a file synchronously
+        fs.writeFileSync('output.txt', 'Hello, Node.js!');
+        console.log('Data written to file');
+        </code>
+            </pre>
+
+            <h3>Appending to Files</h3>
+            <p>Appending data to a file adds content to the end of the file. Here’s how to append data asynchronously:
+            </p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        // Append data to a file asynchronously
+
+Shrey, [12-08-2024 03:17 PM]
+fs.appendFile('output.txt', ' More content.', (err) => {
+            if (err) throw err;
+            console.log('Data appended to file');
+        });
+        </code>
+            </pre>
+
+            <h3>Deleting Files</h3>
+            <p>You can delete files using the <code>fs.unlink</code> method. Here’s how to delete a file asynchronously:
+            </p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        // Delete a file asynchronously
+        fs.unlink('output.txt', (err) => {
+            if (err) throw err;
+            console.log('File deleted');
+        });
+        </code>
+            </pre>
+
+            <h3>Working with Directories</h3>
+            <p>Node.js provides methods to work with directories, such as creating, reading, and deleting directories.
+            </p>
+
+            <h4>Creating a Directory</h4>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        // Create a directory asynchronously
+        fs.mkdir('new-directory', (err) => {
+            if (err) throw err;
+            console.log('Directory created');
+        });
+        </code>
+            </pre>
+
+            <h4>Reading a Directory</h4>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        // Read a directory asynchronously
+        fs.readdir('.', (err, files) => {
+            if (err) throw err;
+            console.log('Files in directory:', files);
+        });
+        </code>
+            </pre>
+
+            <h4>Deleting a Directory</h4>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        // Delete a directory asynchronously
+        fs.rmdir('new-directory', (err) => {
+            if (err) throw err;
+            console.log('Directory deleted');
+        });
+        </code>
+            </pre>
+
+            <h3>Additional Resources</h3>
+            <p>For more details and advanced file system operations, refer to the official Node.js documentation:</p>
+            <ul>
+                <li><a href="https://nodejs.org/api/fs.html">Node.js File System Documentation</a></li>
+            </ul>
+        </section>
+
+        Shrey, [12-08-2024 03:17 PM]
+        <section id="topic5">
+            <h2>Node.js Events</h2>
+            <p>Node.js uses an event-driven architecture that allows it to handle asynchronous operations efficiently.
+                The <code>events</code> module provides a way to work with events and listeners. At the heart of this
+                module is the <code>EventEmitter</code> class, which enables objects to emit and listen for events.</p>
+
+            <h3>EventEmitter Class</h3>
+            <p>The <code>EventEmitter</code> class is used to handle events and listeners. You can create an instance of
+                this class, define your own events, and attach listeners to handle those events.</p>
+
+            <h4>Creating an EventEmitter</h4>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        // Import the 'events' module
+        const EventEmitter = require('events');
+        
+        // Create an instance of EventEmitter
+        const myEmitter = new EventEmitter();
+        
+        // Define an event listener
+        myEmitter.on('event', () => {
+            console.log('An event occurred!');
+        });
+        
+        // Emit the event
+        myEmitter.emit('event');
+        </code>
+            </pre>
+
+            <h3>Event Handling</h3>
+            <p>Event handling in Node.js involves defining events and attaching multiple listeners to them. You can also
+                remove listeners and handle errors related to event emissions.</p>
+
+            <h4>Defining and Emitting Events</h4>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        // Create an EventEmitter instance
+        const myEmitter = new EventEmitter();
+        
+        // Define an event listener with parameters
+        myEmitter.on('greet', (name) => {
+            console.log(Hello, ${name}!);
+        });
+        
+        // Emit the event with parameters
+        myEmitter.emit('greet', 'Alice');
+        </code>
+            </pre>
+
+            <h4>Handling Multiple Listeners</h4>
+            <p>You can attach multiple listeners to a single event:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        // Create an EventEmitter instance
+        const myEmitter = new EventEmitter();
+        
+        // Define multiple listeners for the same event
+        myEmitter.on('data', (data) => {
+            console.log('Listener 1 received data:', data);
+        });
+        myEmitter.on('data', (data) => {
+            console.log('Listener 2 received data:', data);
+        });
+        
+        // Emit the event
+        myEmitter.emit('data', 'Sample data');
+        </code>
+            </pre>
+
+            <h4>Removing Listeners</h4>
+            <p>You can remove specific listeners from an event:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        // Create an EventEmitter instance
+        const myEmitter = new EventEmitter();
+        
+        // Define an event listener
+        const callback = () => {
+            console.log('This will not be logged');
+        };
+        myEmitter.on('event', callback);
+        
+        // Remove the event listener
+        myEmitter.removeListener('event', callback);
+        
+        // Emit the event
+        myEmitter.emit('event');
+        </code>
+            </pre>
+
+            <h4>Handling Errors</h4>
+            <p>When dealing with events, you should handle errors to prevent the application from crashing:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        // Create an EventEmitter instance
+        const myEmitter = new EventEmitter();
+        
+        // Handle 'error' event
+        myEmitter.on('error', (err) => {
+            console.error('An error occurred:', err);
+        });
+        
+        // Emit 'error' event
+
+Shrey, [12-08-2024 03:17 PM]
+myEmitter.emit('error', new Error('Something went wrong'));
+        </code>
+            </pre>
+
+            <h3>Additional Resources</h3>
+            <p>For more details on the <code>EventEmitter</code> class and event handling, refer to the official Node.js
+                documentation:</p>
+            <ul>
+                <li><a href="https://nodejs.org/api/events.html">Node.js Events Documentation</a></li>
+            </ul>
+        </section>
+
+
+        <section id="nodejs-npm">
+            <h2>Node.js NPM</h2>
+            <p>NPM (Node Package Manager) is the default package manager for Node.js. It allows you to install, manage,
+                and share packages (libraries and tools) that you can use in your Node.js projects. NPM provides a vast
+                ecosystem of packages that simplify development and extend functionality.</p>
+
+            <h3>Installing NPM</h3>
+            <p>NPM is installed automatically when you install Node.js. You can verify the installation and check the
+                version of NPM using the following command:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        $ npm -v
+        </code>
+            </pre>
+
+            <h3>Basic NPM Commands</h3>
+            <p>Here are some essential NPM commands to help you get started:</p>
+
+            <h4>1. Initializing a New Project</h4>
+            <p>To create a new Node.js project, initialize a new <code>package.json</code> file using:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        $ npm init
+        </code>
+            </pre>
+            <p>This command will prompt you to enter details about your project. You can also use
+                <code>npm init -y</code> to create a default <code>package.json</code> file without prompts.
+            </p>
+
+            <h4>2. Installing Packages</h4>
+            <p>To install a package and save it as a dependency in your project, use:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        $ npm install <package-name>
+        </code>
+            </pre>
+            <p>To install a package globally (for use across projects), add the <code>-g</code> flag:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        $ npm install -g <package-name>
+        </code>
+            </pre>
+
+            <h4>3. Uninstalling Packages</h4>
+            <p>To remove a package from your project, use:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        $ npm uninstall <package-name>
+        </code>
+            </pre>
+
+            <h4>4. Updating Packages</h4>
+            <p>To update all the packages in your project to their latest versions, use:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        $ npm update
+        </code>
+            </pre>
+
+            <h4>5. Listing Installed Packages</h4>
+            <p>To list all installed packages in your project, use:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        $ npm list
+        </code>
+            </pre>
+            <p>For globally installed packages, use:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        $ npm list -g
+        </code>
+            </pre>
+
+            <h3>Using package.json</h3>
+            <p>The <code>package.json</code> file is essential for managing project dependencies and scripts. Here’s an
+                example of a <code>package.json</code> file:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        {
+          "name": "my-project",
+          "version": "1.0.0",
+
+Shrey, [12-08-2024 03:17 PM]
+"description": "A sample Node.js project",
+          "main": "index.js",
+          "scripts": {
+            "start": "node index.js"
+          },
+          "dependencies": {
+            "express": "^4.17.1"
+          },
+          "devDependencies": {
+            "nodemon": "^2.0.7"
+          },
+          "author": "Your Name",
+          "license": "ISC"
+        }
+        </code>
+            </pre>
+
+            <h4>Scripts</h4>
+            <p>In the <code>scripts</code> section, you can define custom commands to run scripts. For example, the
+                <code>start</code> script defined above can be run using:
+            </p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        $ npm start
+        </code>
+            </pre>
+
+            <h3>Additional Resources</h3>
+            <p>For more details and advanced usage of NPM, refer to the official NPM documentation:</p>
+            <ul>
+                <li><a href="https://docs.npmjs.com/">NPM Documentation</a></li>
+            </ul>
+        </section>
+
+
+    </main>
+</body>
+
+</html>

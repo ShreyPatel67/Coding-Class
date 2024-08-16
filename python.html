@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Tutorial</title>
+    <link rel="stylesheet" href="page.css">
+</head>
+
+<body>
+    <header>
+        <nav class="top-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <nav class="top-nav">
+            <ul>
+                <li><a href="html.html">HTML</a></li>
+                <li><a href="css.html">CSS</a></li>
+                <li><a href="js.html">JS</a></li>
+                <li><a href="python.html">Python</a></li>
+                <li><a href="node.html">Node JS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="side-navbar">
+        <ul>
+            <li><a href="#topic1">python Home</a></li>
+            <li><a href="#topic2">Python Introduction</a></li>
+            <li><a href="#topic3">Python Syntax</a></li>
+            <li><a href="#topic4">Python  Variables</a></li>
+            <li><a href="#topic5">Python Data Types</a></li>
+            <li><a href="#topic6">JPython Operators</a></li>
+            <li><a href="#topic7">Python Functions</a></li>
+            <li><a href="#topic8">Python Modules</a></li>
+        </ul>
+    </div>
+    <main>
+        <h2 class="main">Python Tutorial</h2>
+<p class="intro">Python is a versatile and powerful programming language.</p>
+<p class="intro">With Python, you can create web applications, automate tasks, analyze data, and much more.</p>
+<p class="intro">Python is easy to learn - You will love coding with it!</p>
+
+<a href="codeEditor.html" id="codeEditor">Try Your ideas!</a>
+
+
+        <section id="topic1">
+            <h2>Python Home</h2>
+            <p>Welcome to the Python Home section. Python is a high-level, interpreted programming language known for its readability and simplicity. It is widely used for web development, data analysis, artificial intelligence, scientific computing, and more.</p>
+        
+            <h3>Introduction to Python</h3>
+            <p>Python was created by Guido van Rossum and first released in 1991. Its design philosophy emphasizes code readability with the use of significant indentation. Python supports multiple programming paradigms, including procedural, object-oriented, and functional programming.</p>
+        
+            <h3>Features of Python</h3>
+            <ul>
+                <li><strong>Easy to Learn and Use:</strong> Python's syntax is clear and intuitive, making it easy to pick up even for beginners.</li>
+                <li><strong>Extensive Libraries:</strong> Python has a rich standard library and a large ecosystem of third-party packages and modules.</li>
+                <li><strong>Interpreted Language:</strong> Python code is executed line by line, which makes debugging easier and faster.</li>
+                <li><strong>Cross-Platform:</strong> Python is available on various operating systems, including Windows, macOS, and Linux.</li>
+                <li><strong>Strong Community Support:</strong> Python has a large and active community that contributes to its growth and offers support through forums and online resources.</li>
+            </ul>
+        
+            <h3>Python Syntax and Basics</h3>
+            <p>Python syntax is designed to be straightforward and readable. Here are some basic elements:</p>
+            <ul>
+                <li><strong>Variables:</strong> Variables are used to store data. Python uses dynamic typing, so you don't need to declare a variable's type.</li>
+                <li><strong>Data Types:</strong> Python supports various data types, including integers, floating-point numbers, strings, lists, tuples, sets, and dictionaries.</li>
+                <li><strong>Control Flow:</strong> Python includes standard control flow statements such as <code>if</code>, <code>elif</code>, and <code>else</code>, as well as looping constructs like <code>for</code> and <code>while</code>.</li>
+                <li><strong>Functions:</strong> Functions are defined using the <code>def</code> keyword and are used to encapsulate reusable blocks of code.</li>
+            </ul>
+        
+            <h3>Getting Started with Python</h3>
+            <p>To start programming in Python, you'll need to install it on your system. You can download the latest version of Python from the official <a href="https://www.python.org/downloads/" target="_blank">Python website</a>. Once installed, you can write Python scripts using any text editor or integrated development environment (IDE).</p>
+        
+            <h3>Additional Resources</h3>
+            <p>For more detailed tutorials and documentation, you can visit the official <a href="https://docs.python.org/3/" target="_blank">Python Documentation</a> or explore online learning platforms like <a href="https://www.codecademy.com/learn/learn-python-3" target="_blank">Codecademy</a> and <a href="https://www.udemy.com/topic/python/" target="_blank">Udemy</a>.</p>
+        </section>
+
+        <section id="topic2">
+            <h2>Python Introduction</h2>
+            <p>Python is a powerful, high-level programming language known for its simplicity and readability. It has become one of the most popular programming languages due to its versatility and ease of learning. Python supports multiple programming paradigms and is used in various fields, from web development to data science.</p>
+        
+            <h3>What is Python?</h3>
+            <p>Python is an interpreted, high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. Python was created by Guido van Rossum and first released in 1991. It is named after the British comedy group Monty Python.</p>
+        
+            <h3>Key Features of Python</h3>
+            <ul>
+                <li><strong>Readable and Maintainable Code:</strong> Python's clean syntax allows developers to write code that is easy to read and maintain.</li>
+                <li><strong>Interactive Mode:</strong> Python offers an interactive mode that allows for quick testing and debugging of code snippets.</li>
+                <li><strong>Extensive Standard Library:</strong> Python comes with a vast standard library that provides modules and packages for various tasks, such as file I/O, system calls, and more.</li>
+                <li><strong>Dynamic Typing:</strong> Python uses dynamic typing, which means that you don't need to declare variable types explicitly.</li>
+                <li><strong>Support for Multiple Paradigms:</strong> Python supports procedural, object-oriented, and functional programming styles.</li>
+            </ul>
+        
+            <h3>Python Syntax Basics</h3>
+            <p>The Python syntax is designed to be easy to understand and write. Here are some basic syntax rules:</p>
+            <ul>
+                <li><strong>Indentation:</strong> Python uses indentation to define code blocks, such as loops and functions. Proper indentation is crucial for code execution.</li>
+                <li><strong>Comments:</strong> Use the <code>#</code> symbol to add comments in your code. Comments are ignored by the Python interpreter.</li>
+                <li><strong>Variables and Data Types:</strong> Variables are created by assigning a value to a name. Python supports various data types including integers, floats, strings, and lists.</li>
+            </ul>
+        
+            <h3>Example: Basic Python Syntax</h3>
+            <p>Here’s a simple example demonstrating Python syntax:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        # This is a comment
+        print("Hello, Python!")  # This prints a message to the console
+        
+        # Variables
+        x = 5
+        y = 10
+        sum = x + y
+        print("Sum:", sum)
+        </code>
+            </pre>
+        
+            <h3>Getting Started with Python</h3>
+            <p>To get started with Python, you need to install it on your machine. Visit the official <a href="https://www.python.org/downloads/" target="_blank">Python Downloads</a> page to download the latest version. You can also use online IDEs like <a href="https://repl.it/~" target="_blank">Repl.it</a> to write and execute Python code without installation.</p>
+        
+            <h3>Further Reading and Resources</h3>
+            <p>For more in-depth learning, check out these resources:</p>
+            <ul>
+                <li><a href="https://www.python.org/doc/" target="_blank">Official Python Documentation</a></li>
+                <li><a href="https://www.learnpython.org/" target="_blank">LearnPython.org</a></li>
+                <li><a href="https://www.coursera.org/courses?query=python" target="_blank">Coursera Python Courses</a></li>
+            </ul>
+        </section>
+
+        <section id="topic3">
+            <h2>Python Syntax</h2>
+            <p>Python syntax is designed to be clean and easy to understand. The language emphasizes readability, which allows developers to write code that is more intuitive and maintainable. Python uses indentation to define code blocks, which eliminates the need for braces or other delimiters used in many other programming languages.</p>
+        
+            <h3>Basic Syntax Rules</h3>
+            <ul>
+                <li><strong>Indentation:</strong> Python uses indentation (spaces or tabs) to define the structure of the code. Consistent indentation is critical for the code to execute correctly.</li>
+                <li><strong>Comments:</strong> Comments in Python are written using the <code>#</code> symbol. Comments are ignored by the interpreter and are used to annotate the code for better readability.</li>
+                <li><strong>Variables:</strong> Variables in Python are created by assigning a value to a name. Python uses dynamic typing, so you don’t need to declare the variable type explicitly.</li>
+                <li><strong>Data Types:</strong> Python supports various data types including integers, floating-point numbers, strings, lists, tuples, sets, and dictionaries.</li>
+                <li><strong>Statements and Expressions:</strong> Statements perform an action, while expressions produce a value. For example, <code>x = 5</code> is a statement, and <code>5 + 3</code> is an expression.</li>
+            </ul>
+        
+            <h3>Example: Basic Python Syntax</h3>
+            <p>Here’s a simple Python program demonstrating basic syntax:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        # This is a comment
+        print("Hello, Python!")  # This prints a message to the console
+        
+        # Variables
+        x = 5
+        y = 10
+        sum = x + y
+        print("Sum:", sum)
+        </code>
+            </pre>
+        
+            <h3>Example: Using Indentation</h3>
+            <p>Indentation is used to define the structure of loops, conditionals, and function definitions. Here’s an example of a function with proper indentation:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        def greet(name):
+            # Function to greet a person
+            print(f"Hello, {name}!")
+        
+        greet("Alice")  # Output: Hello, Alice!
+        </code>
+            </pre>
+        
+            <h3>Example: Comments and Documentation</h3>
+            <p>Comments and documentation are important for understanding and maintaining code. Here’s how to use comments effectively:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        # This is a single-line comment
+        
+        """
+        This is a multi-line comment
+        or docstring, used for documenting
+        a module, class, or function.
+        """
+        
+        print("Documentation is useful!")
+        </code>
+            </pre>
+        
+            <h3>Additional Resources</h3>
+            <p>For more detailed information on Python syntax, you can refer to the official <a href="https://docs.python.org/3/tutorial/index.html" target="_blank">Python Tutorial</a> and explore other learning resources such as <a href="https://www.learnpython.org/" target="_blank">LearnPython.org</a> and <a href="https://www.codecademy.com/learn/learn-python-3" target="_blank">Codecademy Python Course</a>.</p>
+        </section>
+
+        <section id="topic4">
+            <h2>Python Variables</h2>
+            <p>In Python, variables are used to store data values. A variable is essentially a name that refers to a value. Python uses dynamic typing, which means that you don’t need to declare the type of a variable explicitly; the type is inferred from the value assigned to it.</p>
+        
+            <h3>Creating Variables</h3>
+            <p>To create a variable, simply assign a value to a name using the <code>=</code> operator. Python allows you to use a wide range of variable names, provided they follow the naming rules.</p>
+            <ul>
+                <li><strong>Variable Naming Rules:</strong> Variable names must start with a letter or an underscore (_), followed by letters, digits, or underscores. Variable names are case-sensitive.</li>
+                <li><strong>Examples of Valid Variable Names:</strong> <code>my_var</code>, <code>value1</code>, <code>_temp</code></li>
+                <li><strong>Examples of Invalid Variable Names:</strong> <code>1value</code>, <code>my-var</code>, <code>value@</code></li>
+            </ul>
+        
+            <h3>Example: Basic Variable Usage</h3>
+            <p>Here’s a simple example demonstrating how to create and use variables:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        # Assigning values to variables
+        name = "Alice"
+        age = 30
+        
+        # Using variables
+        print("Name:", name)  # Output: Name: Alice
+        print("Age:", age)    # Output: Age: 30
+        </code>
+            </pre>
+        
+            <h3>Variable Types</h3>
+            <p>Python supports several data types that can be assigned to variables, including:</p>
+            <ul>
+                <li><strong>Integers:</strong> Whole numbers, e.g., <code>x = 10</code></li>
+                <li><strong>Floats:</strong> Decimal numbers, e.g., <code>y = 3.14</code></li>
+                <li><strong>Strings:</strong> Text values enclosed in quotes, e.g., <code>name = "Alice"</code></li>
+                <li><strong>Booleans:</strong> True or False values, e.g., <code>is_active = True</code></li>
+                <li><strong>Lists:</strong> Ordered collections of items, e.g., <code>numbers = [1, 2, 3]</code></li>
+            </ul>
+        
+            <h3>Example: Variable Types and Operations</h3>
+            <p>This example demonstrates different types of variables and basic operations:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        # Integer and Float
+        x = 10
+        y = 3.14
+        result = x + y
+        print("Result:", result)  # Output: Result: 13.14
+        
+        # String
+        greeting = "Hello, "
+        name = "Alice"
+        message = greeting + name
+        print("Message:", message)  # Output: Message: Hello, Alice
+        
+        # Boolean
+        is_active = True
+        print("Is active:", is_active)  # Output: Is active: True
+        </code>
+            </pre>
+        
+            <h3>Variable Scope</h3>
+            <p>The scope of a variable refers to where the variable is accessible within the code. Variables defined inside a function are local to that function, while variables defined outside of any function are global.</p>
+            <ul>
+                <li><strong>Local Variables:</strong> Variables defined within a function and accessible only within that function.</li>
+                <li><strong>Global Variables:</strong> Variables defined outside of all functions and accessible throughout the entire script.</li>
+            </ul>
+        
+            <h3>Example: Variable Scope</h3>
+            <p>Here’s an example showing local and global variables:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        # Global variable
+        global_var = "I am global"
+        
+        def my_function():
+            # Local variable
+            local_var = "I am local"
+            print(local_var)  # Output: I am local
+            print(global_var) # Output: I am global
+        
+        my_function()
+        print(global_var)  # Output: I am global
+        # print(local_var)  # This will cause an error because local_var is not accessible here
+        </code>
+            </pre>
+        
+            <h3>Additional Resources</h3>
+            <p>For more detailed information on Python variables, you can visit the official <a href="https://docs.python.org/3/tutorial/introduction.html#using-python-as-a-calculator" target="_blank">Python Tutorial</a> or explore other learning resources such as <a href="https://www.learnpython.org/" target="_blank">LearnPython.org</a> and <a href="https://www.codecademy.com/learn/learn-python-3" target="_blank">Codecademy Python Course</a>.</p>
+        </section>
+
+        <section id="topic5">
+            <h2>Python Data Types</h2>
+            <p>Python supports a variety of data types that allow you to work with different kinds of data. Each data type serves a specific purpose and is used to store and manipulate data in your programs. Understanding data types is crucial for effective programming in Python.</p>
+        
+            <h3>Basic Data Types</h3>
+            <p>Python has several built-in data types that are commonly used:</p>
+            <ul>
+                <li><strong>Integers:</strong> Whole numbers without a decimal point. Examples include <code>5</code>, <code>-42</code>, and <code>1000</code>.</li>
+                <li><strong>Floats:</strong> Numbers with a decimal point. Examples include <code>3.14</code>, <code>-0.001</code>, and <code>2.0</code>.</li>
+                <li><strong>Strings:</strong> Sequences of characters enclosed in single quotes (<code>'</code>) or double quotes (<code>"</code>). Examples include <code>"Hello"</code> and <code>'World'</code>.</li>
+                <li><strong>Booleans:</strong> Represents truth values <code>True</code> and <code>False</code>.</li>
+            </ul>
+        
+            <h3>Example: Basic Data Types</h3>
+            <p>Here’s a simple example demonstrating different data types:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        # Integer
+        age = 25
+        
+        # Float
+        height = 5.9
+        
+        # String
+        name = "Alice"
+        
+        # Boolean
+        is_student = True
+        
+        print("Age:", age)          # Output: Age: 25
+        print("Height:", height)    # Output: Height: 5.9
+        print("Name:", name)        # Output: Name: Alice
+        print("Is student:", is_student)  # Output: Is student: True
+        </code>
+            </pre>
+        
+            <h3>Composite Data Types</h3>
+            <p>In addition to basic data types, Python also supports composite data types that are used to store collections of values:</p>
+            <ul>
+                <li><strong>Lists:</strong> Ordered collections of items that can be of different types. Lists are defined using square brackets (<code>[]</code>). Example: <code>[1, 2, 3, "Python"]</code>.</li>
+                <li><strong>Tuples:</strong> Similar to lists, but immutable (cannot be changed after creation). Tuples are defined using parentheses (<code>()</code>). Example: <code>(1, 2, 3, "Python")</code>.</li>
+                <li><strong>Sets:</strong> Unordered collections of unique items. Sets are defined using curly braces (<code>{}</code>). Example: <code>{1, 2, 3, "Python"}</code>.</li>
+                <li><strong>Dictionaries:</strong> Collections of key-value pairs. Dictionaries are defined using curly braces with key-value pairs separated by colons (<code>{key: value}</code>). Example: <code>{'name': 'Alice', 'age': 25}</code>.</li>
+            </ul>
+        
+            <h3>Example: Composite Data Types</h3>
+            <p>Here’s how you can use composite data types in Python:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        # List
+        my_list = [1, 2, 3, "Python"]
+        print("List:", my_list)  # Output: List: [1, 2, 3, 'Python']
+        
+        # Tuple
+        my_tuple = (1, 2, 3, "Python")
+        print("Tuple:", my_tuple)  # Output: Tuple: (1, 2, 3, 'Python')
+        
+        # Set
+        my_set = {1, 2, 3, "Python"}
+        print("Set:", my_set)  # Output: Set: {1, 2, 3, 'Python'}
+        
+        # Dictionary
+        my_dict = {'name': 'Alice', 'age': 25}
+        print("Dictionary:", my_dict)  # Output: Dictionary: {'name': 'Alice', 'age': 25}
+        </code>
+            </pre>
+        
+            <h3>Type Conversion</h3>
+            <p>Python allows you to convert between different data types using built-in functions. This is useful when you need to perform operations that require specific data types:</p>
+            <ul>
+                <li><strong>Convert to Integer:</strong> <code>int()</code></li>
+                <li><strong>Convert to Float:</strong> <code>float()</code></li>
+                <li><strong>Convert to String:</strong> <code>str()</code></li>
+                <li><strong>Convert to List:</strong> <code>list()</code></li>
+                <li><strong>Convert to Tuple:</strong> <code>tuple()</code></li>
+            </ul>
+        
+            <h3>Example: Type Conversion</h3>
+            <p>This example demonstrates how to convert between different data types:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        # Convert to Integer
+        x = "10"
+        x_int = int(x)
+        print("Integer:", x_int)  # Output: Integer: 10
+        
+        # Convert to Float
+        y = "3.14"
+        y_float = float(y)
+        print("Float:", y_float)  # Output: Float: 3.14
+        
+        # Convert to String
+        z = 25
+        z_str = str(z)
+        print("String:", z_str)  # Output: String: 25
+        </code>
+            </pre>
+        
+            <h3>Additional Resources</h3>
+            <p>For more information on Python data types, you can refer to the official <a href="https://docs.python.org/3/library/stdtypes.html" target="_blank">Python Standard Library Documentation</a> or explore tutorials on <a href="https://www.learnpython.org/" target="_blank">LearnPython.org</a> and <a href="https://www.codecademy.com/learn/learn-python-3" target="_blank">Codecademy Python Course</a>.</p>
+        </section>
+
+        
+        <section id="topic6">
+            <h2>Python Operators</h2>
+            <p>Operators in Python are special symbols or keywords used to perform operations on values and variables. They are used in various expressions and statements to manipulate data. Python supports several types of operators, each serving a different purpose.</p>
+        
+            <h3>Types of Operators</h3>
+            <p>Python includes the following types of operators:</p>
+        
+            <h4>1. Arithmetic Operators</h4>
+            <p>Arithmetic operators are used to perform basic mathematical operations:</p>
+            <ul>
+                <li><strong>Addition:</strong> <code>+</code> (e.g., <code>5 + 3</code>)</li>
+                <li><strong>Subtraction:</strong> <code>-</code> (e.g., <code>5 - 3</code>)</li>
+                <li><strong>Multiplication:</strong> <code>*</code> (e.g., <code>5 * 3</code>)</li>
+                <li><strong>Division:</strong> <code>/</code> (e.g., <code>5 / 3</code>)</li>
+                <li><strong>Modulus:</strong> <code>%</code> (e.g., <code>5 % 3</code>)</li>
+                <li><strong>Exponentiation:</strong> <code>**</code> (e.g., <code>5 ** 3</code>)</li>
+                <li><strong>Floor Division:</strong> <code>//</code> (e.g., <code>5 // 3</code>)</li>
+            </ul>
+        
+            <h3>Example: Arithmetic Operators</h3>
+            <p>Here’s an example demonstrating the use of arithmetic operators:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        # Arithmetic Operations
+        a = 10
+        b = 3
+        
+        addition = a + b
+        subtraction = a - b
+        multiplication = a * b
+        division = a / b
+        modulus = a % b
+        exponentiation = a ** b
+        floor_division = a // b
+        
+        print("Addition:", addition)           # Output: Addition: 13
+        print("Subtraction:", subtraction)     # Output: Subtraction: 7
+        print("Multiplication:", multiplication) # Output: Multiplication: 30
+        print("Division:", division)           # Output: Division: 3.3333333333333335
+        print("Modulus:", modulus)             # Output: Modulus: 1
+        print("Exponentiation:", exponentiation) # Output: Exponentiation: 1000
+        print("Floor Division:", floor_division) # Output: Floor Division: 3
+        </code>
+            </pre>
+        
+            <h4>2. Comparison Operators</h4>
+            <p>Comparison operators are used to compare values:</p>
+            <ul>
+                <li><strong>Equal to:</strong> <code>==</code> (e.g., <code>5 == 3</code>)</li>
+                <li><strong>Not equal to:</strong> <code>!=</code> (e.g., <code>5 != 3</code>)</li>
+                <li><strong>Greater than:</strong> <code>&gt;</code> (e.g., <code>5 &gt; 3</code>)</li>
+                <li><strong>Less than:</strong> <code>&lt;</code> (e.g., <code>5 &lt; 3</code>)</li>
+                <li><strong>Greater than or equal to:</strong> <code>&gt;=</code> (e.g., <code>5 &gt;= 3</code>)</li>
+                <li><strong>Less than or equal to:</strong> <code>&lt;=</code> (e.g., <code>5 &lt;= 3</code>)</li>
+            </ul>
+        
+            <h3>Example: Comparison Operators</h3>
+            <p>Here’s an example demonstrating the use of comparison operators:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        # Comparison Operations
+        x = 10
+        y = 20
+        
+        print("x == y:", x == y)   # Output: x == y: False
+        print("x != y:", x != y)   # Output: x != y: True
+        print("x &gt; y:", x &gt; y)  # Output: x &gt; y: False
+        print("x &lt; y:", x &lt; y)  # Output: x &lt; y: True
+        print("x &gt;= y:", x &gt;= y) # Output: x &gt;= y: False
+        print("x &lt;= y:", x &lt;= y) # Output: x &lt;= y: True
+        </code>
+            </pre>
+        
+            <h4>3. Logical Operators</h4>
+            <p>Logical operators are used to combine conditional statements:</p>
+            <ul>
+                <li><strong>AND:</strong> <code>and</code> (e.g., <code>(x &gt; 5) and (x &lt; 10)</code>)</li>
+                <li><strong>OR:</strong> <code>or</code> (e.g., <code>(x &gt; 5) or (x &lt; 10)</code>)</li>
+                <li><strong>NOT:</strong> <code>not</code> (e.g., <code>not(x &gt; 5)</code>)</li>
+            </ul>
+        
+            <h3>Example: Logical Operators</h3>
+            <p>Here’s an example demonstrating the use of logical operators:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        # Logical Operations
+        a = 10
+        b = 20
+        
+        print("a &gt; 5 and b &lt; 30:", a &gt; 5 and b &lt; 30)  # Output: a &gt; 5 and b &lt; 30: True
+        print("a &lt; 5 or b &gt; 15:", a &lt; 5 or b &gt; 15)  # Output: a &lt; 5 or b &gt; 15: True
+        print("not(a &gt; 5):", not(a &gt; 5))  # Output: not(a &gt; 5): False
+        </code>
+            </pre>
+        
+            <h4>4. Assignment Operators</h4>
+            <p>Assignment operators are used to assign values to variables:</p>
+            <ul>
+                <li><strong>Assign:</strong> <code>=</code> (e.g., <code>x = 10</code>)</li>
+                <li><strong>Add and assign:</strong> <code>+=</code> (e.g., <code>x += 5</code>)</li>
+                <li><strong>Subtract and assign:</strong> <code>-=</code> (e.g., <code>x -= 5</code>)</li>
+                <li><strong>Multiply and assign:</strong> <code>*=</code> (e.g., <code>x *= 5</code>)</li>
+                <li><strong>Divide and assign:</strong> <code>/=</code> (e.g., <code>x /= 5</code>)</li>
+                <li><strong>Modulus and assign:</strong> <code>%=</code> (e.g., <code>x %= 5</code>)</li>
+            </ul>
+        
+            <h3>Example: Assignment Operators</h3>
+            <p>Here’s an example demonstrating the use of assignment operators:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        # Assignment Operations
+        x = 10
+        
+        x += 5  # Equivalent to x = x + 5
+        print("x after += 5:", x)  # Output: x after += 5: 15
+        
+        x -= 3  # Equivalent to x = x - 3
+        print("x after -= 3:", x)  # Output: x after -= 3: 12
+        
+        x *= 2  # Equivalent to x = x * 2
+        print("x after *= 2:", x)  # Output: x after *= 2: 24
+        
+        x /= 4  # Equivalent to x = x / 4
+        print("x after /= 4:", x)  # Output: x after /= 4: 6.0
+        </code>
+            </pre>
+        
+            <h3>Additional Resources</h3>
+            <p>For more information on Python operators, you can refer to the official </p>
+            </section>
+
+            <section id="topic7">
+                <h2>Python Functions</h2>
+                <p>Functions are a fundamental concept in Python programming. They allow you to group a set of statements together so they can be run more than once. Functions help make code more modular, reusable, and easier to understand.</p>
+            
+                <h3>Defining a Function</h3>
+                <p>Functions in Python are defined using the <code>def</code> keyword, followed by the function name and parentheses. The function body is indented and contains the statements to be executed when the function is called:</p>
+                <pre style="background-color: #f5f5f5; padding: 10px; border: 1px solid #ddd;">
+            <code>
+            def greet(name):
+                """Display a greeting message."""
+                print("Hello, " + name + "!")
+            </code>
+                </pre>
+            
+                <h3>Calling a Function</h3>
+                <p>To execute the code inside a function, you need to call it by using its name followed by parentheses. You can pass arguments to the function if it requires them:</p>
+                <pre style="background-color: #f5f5f5; padding: 10px; border: 1px solid #ddd;">
+            <code>
+            # Call the function with an argument
+            greet("Alice")
+            # Output: Hello, Alice!
+            </code>
+                </pre>
+            
+                <h3>Function Parameters and Arguments</h3>
+                <p>Functions can take parameters, which are variables listed inside the parentheses in the function definition. When you call the function, you pass values to these parameters, known as arguments:</p>
+                <ul>
+                    <li><strong>Positional Arguments:</strong> Arguments that are passed to the function in the order that the parameters are defined.</li>
+                    <li><strong>Keyword Arguments:</strong> Arguments that are passed by explicitly specifying the parameter name.</li>
+                    <li><strong>Default Arguments:</strong> Parameters that assume a default value if a value is not provided in the function call.</li>
+                </ul>
+            
+                <h3>Example: Function Parameters</h3>
+                <p>This example demonstrates different types of function parameters:</p>
+                <pre style="background-color: #f5f5f5; padding: 10px; border: 1px solid #ddd;">
+            <code>
+            def describe_pet(name, animal_type="dog"):
+                """Display information about a pet."""
+                print("I have a " + animal_type + " named " + name + ".")
+            
+            # Positional Argument
+            describe_pet("Buddy")  # Output: I have a dog named Buddy.
+            
+            # Keyword Argument
+            describe_pet(name="Whiskers", animal_type="cat")  # Output: I have a cat named Whiskers.
+            
+            # Default Argument
+            describe_pet("Charlie")  # Output: I have a dog named Charlie.
+            </code>
+                </pre>
+            
+                <h3>Returning Values</h3>
+                <p>Functions can return values using the <code>return</code> statement. The return value can be used in expressions or assigned to variables:</p>
+                <pre style="background-color: #f5f5f5; padding: 10px; border: 1px solid #ddd;">
+            <code>
+            def add_numbers(x, y):
+                """Return the sum of two numbers."""
+                return x + y
+            
+            result = add_numbers(5, 3)
+            print("The sum is:", result)  # Output: The sum is: 8
+            </code>
+                </pre>
+            
+                <h3>Lambda Functions</h3>
+                <p>Lambda functions are small anonymous functions defined using the <code>lambda</code> keyword. They can have any number of arguments but only one expression. The expression is evaluated and returned:</p>
+                <pre style="background-color: #f5f5f5; padding: 10px; border: 1px solid #ddd;">
+            <code>
+            # Lambda Function Example
+            add = lambda x, y: x + y
+            print("The sum is:", add(5, 3))  # Output: The sum is: 8
+            </code>
+                </pre>
+            
+                <h3>Additional Resources</h3>
+                <p>For more information on Python functions, you can refer to the official <a href="https://docs.python.org/3/tutorial/controlflow.html#defining-functions" target="_blank">Python Documentation on Functions</a> or explore tutorials on <a href="https://www.learnpython.org/" target="_blank">LearnPython.org</a> and <a href="https://www.codecademy.com/learn/learn-python-3" target="_blank">Codecademy Python Course</a>.</p>
+            </section>
+            
+
+                         
+                
+            <section id="topic8">
+                    <h2>Python Modules</h2>
+                    <p>Modules are a way to organize and reuse code in Python. A module is a file containing Python code, which can define functions, classes, and variables. Modules help you break down large programs into smaller, manageable, and logically organized files.</p>
+                
+                    <h3>Importing Modules</h3>
+                    <p>You can import modules using the <code>import</code> statement. This allows you to access the functions, classes, and variables defined in the module:</p>
+                    <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+                <code>
+                # Importing the entire module
+                import math
+                
+                # Using a function from the math module
+                print(math.sqrt(16))  # Output: 4.0
+                </code>
+                    </pre>
+                
+                    <h3>Importing Specific Items</h3>
+                    <p>Instead of importing the entire module, you can import specific functions or variables. This can be done using the <code>from</code> keyword:</p>
+                    <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+                <code>
+                # Importing a specific function
+                from math import pi
+                
+                print(pi)  # Output: 3.141592653589793
+                </code>
+                    </pre>
+                
+                    <h3>Creating Your Own Modules</h3>
+                    <p>You can create your own modules by saving your Python code in a file with a <code>.py</code> extension. For example, if you have a file named <code>my_module.py</code> with the following code:</p>
+                    <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+                <code>
+                # my_module.py
+                def greet(name):
+                    """Display a greeting message."""
+                    print("Hello, " + name + "!")
+                </code>
+                    </pre>
+                    <p>You can import and use this module in another script as follows:</p>
+                    <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+                <code>
+                # Importing the custom module
+                import my_module
+                
+                # Using the function from the module
+                my_module.greet("Alice")  # Output: Hello, Alice!
+                </code>
+                    </pre>
+                
+                    <h3>Module Aliases</h3>
+                    <p>To make your code more concise, you can use an alias when importing a module. This is done using the <code>as</code> keyword:</p>
+                    <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+                <code>
+                # Importing a module with an alias
+                import numpy as np
+                
+                # Using the alias to call a function from the numpy module
+                array = np.array([1, 2, 3])
+                print(array)  # Output: [1 2 3]
+                </code>
+                    </pre>
+                
+                    <h3>Standard Library Modules</h3>
+                    <p>Python comes with a rich standard library of modules. Some commonly used standard modules include <code>os</code>, <code>sys</code>, <code>datetime</code>, and <code>json</code>. These modules provide essential functionalities for various tasks:</p>
+                    <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+                <code>
+                # Example using the os module
+                import os
+                
+                # Get the current working directory
+                print(os.getcwd())
+                </code>
+                    </pre>
+                
+                    <h3>Additional Resources</h3>
+                    <p>For more information on Python modules, refer to the official <a href="https://docs.python.org/3/tutorial/modules.html" target="_blank">Python Documentation on Modules</a> or explore resources on <a href="https://www.learnpython.org/" target="_blank">LearnPython.org</a> and <a href="https://www.codecademy.com/learn/learn-python-3" target="_blank">Codecademy Python Course</a>.</p>
+                </section>    
+
+                <a href="Pythonquiz.html">
+                    <button id="startQuizBtn" style="
+                        background-color: #03cae4;
+                        color: #fff;
+                        border: none;
+                        width: 100%;
+                        padding: 1.3rem;
+                        font-size: 1.1rem;
+                        font-family: 'Poppins', sans-serif;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                        transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+                    " 
+                    onmouseover="this.style.backgroundColor='#04adc4'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 16px rgba(0, 0, 0, 0.2)';" 
+                    onmouseout="this.style.backgroundColor='#03cae4'; this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 8px rgba(0, 0, 0, 0.1)';"
+                    >
+                        Start Python Quiz
+                    </button>
+                </a>
+                
+    </main>
+</body>
+
+</html>
